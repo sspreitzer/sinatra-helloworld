@@ -2,7 +2,7 @@ require 'sinatra'
 require 'socket'
 
 get '/' do
-  "<H1>#{Socket.gethostname}</H1>"
+  Socket.gethostname
 end
 
 run Sinatra::Application
